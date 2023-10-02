@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="4.0" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd">
+    <servlet>
+        <servlet-name>Servlet</servlet-name>
+        <servlet-class>Servlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>nuevo</servlet-name>
+        <servlet-class>Controller.nuevo</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>ManejoFormularioServlet</servlet-name>
+        <servlet-class>servlet.ManejoFormularioServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>GuardarUsuarioServlet</servlet-name>
+        <servlet-class>servlet.GuardarUsuarioServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Servlet</servlet-name>
+        <url-pattern>/Servlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>nuevo</servlet-name>
+        <url-pattern>/nuevo</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ManejoFormularioServlet</servlet-name>
+        <url-pattern>/ManejoFormularioServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>GuardarUsuarioServlet</servlet-name>
+        <url-pattern>/GuardarUsuarioServlet</url-pattern>
+    </servlet-mapping>
+    <session-config>
+        <session-timeout>
+            30
+        </session-timeout>
+    </session-config>
+</web-app>

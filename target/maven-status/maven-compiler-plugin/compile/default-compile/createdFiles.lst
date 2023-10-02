@@ -1,0 +1,4 @@
+com\mycompany\evaluacion2\JAXRSConfiguration.class
+dao\UsuarioDAO.class
+com\mycompany\evaluacion2\resources\JavaEE8Resource.class
+model\Usuario.class
